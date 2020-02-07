@@ -1,10 +1,10 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const public = './public';
+const dist = './dist';
 
 module.exports = {
-	entry: './src/index.js',
 	module: {
 		rules: [
 			{
@@ -13,18 +13,27 @@ module.exports = {
 				use: {
 					loader: 'babel-loader'
 				}
+			},
+			{
+				test: /\.html$/,
+				use: {
+					loader: 'html-loader'
+				}
 			}
 		]
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new HtmlWebPackPlugin({
+			template: './src/index.html',
+			filename: './index.html'
+		})
 	],
 	devServer: {
-		contentBase: public,
+		contentBase: dist,
 		hot: true
 	},
 	output: {
-		path: path.resolve(__dirname, public),
-		filename: 'bundle.js'
+		path: path.resolve(__dirname, dist)
 	}
 };
