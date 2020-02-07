@@ -13,10 +13,11 @@
     "@babel/preset-react": "^7.8.3",
     "babel-loader": "^8.0.6",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development"
   },
   "author": "Aaron MacDonald",
   "license": "MIT"

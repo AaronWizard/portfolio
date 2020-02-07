@@ -1,23 +1,30 @@
 const path = require('path');
+const webpack = require('webpack');
+
+const public = './public';
 
 module.exports = {
-	context: path.resolve('src'),
-	entry: [
-		'./index.js'
-	],
-	output: {
-		path: path.resolve('www'),
-		filename: 'bundle.js'
-	},
+	entry: './src/index.js',
 	module: {
 		rules: [
 			{
-				test: /\.js$/,
+				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {
 					loader: 'babel-loader'
 				}
 			}
 		]
+	},
+	plugins: [
+		new webpack.HotModuleReplacementPlugin()
+	],
+	devServer: {
+		contentBase: public,
+		hot: true
+	},
+	output: {
+		path: path.resolve(__dirname, public),
+		filename: 'bundle.js'
 	}
 };
