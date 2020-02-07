@@ -1,9 +1,15 @@
 import React from 'react';
 
+import resume from '../resume';
+
 class App extends React.Component {
 	render() {
 		return (
-			<p>App: Hello world</p>
+			<div>
+				<p>{resume.profile}</p>
+				<p>{resume.contactInfo.street1}</p>
+				<p>{resume.contactInfo.city}</p>
+			</div>
 		);
 	}
 }
