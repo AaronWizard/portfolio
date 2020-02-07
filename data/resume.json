@@ -100,29 +100,6 @@
 		]
 	},
 
-	"awards": [
-		{
-			"name": "Computer Science Sexton Scholar Certificate",
-			"date": "March 2007"
-		},
-		{
-			"name": "Halifax City Local NSTU Student Educational Award",
-			"date": "September 2005"
-		},
-		{
-			"name": "Dalhousie University Entrance Scholarship",
-			"date": "September 2004"
-		},
-		{
-			"name": "Computer Science Entrance Scholarship",
-			"date": "September 2004"
-		},
-		{
-			"name": "Halifax City Local NSTU Student Educational Award",
-			"date": "September 2004"
-		}
-	],
-
 	"activities": [
 		{ "item": "Designing and developing computer games" },
 		{
