@@ -3,8 +3,6 @@ import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import { Container } from 'react-bootstrap';
 
-//import resume from '../resume';
-
 import NavBar from './NavBar';
 
 import About from './About';
