@@ -103,14 +103,15 @@
 	"activities": [
 		{ "item": "Designing and developing computer games" },
 		{
-			"item": "Creating artwork",
-			"subItems": [
-				"Took extended studies courses to improve artistic skills"
-			]
+			"item": "Creating artwork and taking extended studies courses to improve artistic skills"
 		},
 		{
-			"item": "Web development using Angular",
-			"links": ["https://github.com/AaronWizard/resume"]
+			"item": "Web development using modern web technologies",
+			"links": [
+				"https://github.com/AaronWizard/resume",
+				"https://github.com/AaronWizard/portfolio",
+				"https://aaronwizard.github.io/portfolio/"
+			]
 		},
 		{ "item": "Practising the guitar" }
 	],
