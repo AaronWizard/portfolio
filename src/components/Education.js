@@ -1,11 +1,22 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
+//import PropTypes from 'prop-types';
 
-class Education extends React.Component {
-	render () {
-		return (
-			<h2>Education</h2>
-		);
-	}
-}
+import resume from '../resume';
+
+const Education = () => {
+	return (
+		<Card>
+			<Card.Body>
+				<Card.Title>
+					{resume.education.school}
+				</Card.Title>
+				<Card.Subtitle>
+					{resume.education.degree}
+				</Card.Subtitle>
+			</Card.Body>
+		</Card>
+	);
+};
 
 export default Education;
