@@ -1,4 +1,5 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
 
 import Address from './Address';
 import ThirdPartyCredits from './ThirdPartyCredits';
@@ -8,17 +9,19 @@ import resume from '../resume';
 
 const About = () => {
 	return (
-		<div>
-			<p className="lead">{resume.profile}</p>
-			<Address contactInfo={resume.contactInfo} />
-			<ThirdPartyCredits
-				thirdPartyCredits={resume.thirdPartyTechnologies} />
-			<p>
-				The source code is available at <ThirdPartyLink
-					url={resume.github}
-					text="hosted on Github" />.
-			</p>
-		</div>
+		<Card>
+			<Card.Body>
+				<p className="lead">{resume.profile}</p>
+				<Address contactInfo={resume.contactInfo} />
+				<ThirdPartyCredits
+					thirdPartyCredits={resume.thirdPartyTechnologies} />
+				<p>
+					The source code is available at <ThirdPartyLink
+						url={resume.github}
+						text="hosted on Github" />.
+				</p>
+			</Card.Body>
+		</Card>
 	);
 };
 
