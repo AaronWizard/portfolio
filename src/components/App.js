@@ -11,26 +11,24 @@ import Education from './Education';
 import Activities from './Activities';
 import PageNotFound from './PageNotFound';
 
-class App extends React.Component {
-	render() {
-		return (
-			<Router>
-				<Container>
-					<h1>Aaron MacDonald&#39;s Resume and Portfolio</h1>
-					<NavBar />
-					<Switch>
-						<Route exact path="/" component={About} />
-						<Route exact path="/employment"
-							component={EmploymentHistory} />
-						<Route exact path="/education" component={Education} />
-						<Route exact path="/activities"
-							component={Activities} />
-						<Route component={PageNotFound} />
-					</Switch>
-				</Container>
-			</Router>
-		);
-	}
-}
+const App = () => {
+	return (
+		<Router>
+			<Container>
+				<h1>Aaron MacDonald&#39;s Resume and Portfolio</h1>
+				<NavBar />
+				<Switch>
+					<Route exact path="/" component={About} />
+					<Route exact path="/employment"
+						component={EmploymentHistory} />
+					<Route exact path="/education" component={Education} />
+					<Route exact path="/activities"
+						component={Activities} />
+					<Route component={PageNotFound} />
+				</Switch>
+			</Container>
+		</Router>
+	);
+};
 
 export default App;
