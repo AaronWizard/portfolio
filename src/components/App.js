@@ -14,8 +14,8 @@ import PageNotFound from './PageNotFound';
 class App extends React.Component {
 	render() {
 		return (
-			<Router basename={process.env.PUBLIC_URL}>
-				<h1>Aaron MacDonald Resume and Portfolio</h1>
+			<Router basename="/portfolio">
+				<h1>Aaron MacDonald&#39;s Resume and Portfolio</h1>
 				<nav>
 					<ul>
 						<li>

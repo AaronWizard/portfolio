@@ -36,5 +36,6 @@
     "deploy": "gh-pages -d dist"
   },
   "author": "Aaron MacDonald",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://aaronwizard.github.io/portfolio"
 }
