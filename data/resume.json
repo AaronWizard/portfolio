@@ -123,5 +123,34 @@
 		"warp_run_screen_2.png",
 		"falling_blocks.png",
 		"shape_fight.png"
-	]
+	],
+
+	"thirdPartyTechnologies": [
+		{
+			"name": "React",
+			"url": "https://reactjs.org/"
+		},
+		{
+			"name": "React Router",
+			"url": "https://reacttraining.com/react-router/"
+		},
+		{
+			"name": "Bootstrap",
+			"url": "https://getbootstrap.com/"
+		},
+		{
+			"name": "React Bootstrap",
+			"url": "https://react-bootstrap.github.io/"
+		},
+		{
+			"name": "Babel",
+			"url": "https://babeljs.io/"
+		},
+		{
+			"name": "Webpack",
+			"url": "https://webpack.js.org/"
+		}
+	],
+
+	"github": "https://github.com/AaronWizard/portfolio"
 }
