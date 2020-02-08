@@ -14,10 +14,6 @@ module.exports = {
 				use: ['babel-loader', 'eslint-loader'],
 			},
 			{
-				test: /\.html$/,
-				use: 'html-loader'
-			},
-			{
 				test: /\.css$/,
 				use: ['style-loader', 'css-loader']
 			}
@@ -27,15 +23,17 @@ module.exports = {
 		new CleanWebpackPlugin(),
 		new webpack.HotModuleReplacementPlugin(),
 		new HtmlWebPackPlugin({
-			template: './src/index.html',
+			template: './public/index.html',
 			filename: './index.html'
 		})
 	],
 	devServer: {
-		contentBase: dist,
+		historyApiFallback: true,
 		hot: true
 	},
 	output: {
-		path: path.resolve(__dirname, dist)
+		filename: 'bundle.[hash].js',
+		path: path.resolve(__dirname, dist),
+		publicPath: '/'
 	}
 };
