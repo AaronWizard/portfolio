@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 //import { Container } from 'react-bootstrap';
 
@@ -14,7 +14,7 @@ import PageNotFound from './PageNotFound';
 class App extends React.Component {
 	render() {
 		return (
-			<Router basename="/portfolio">
+			<Router>
 				<h1>Aaron MacDonald&#39;s Resume and Portfolio</h1>
 				<nav>
 					<ul>
