@@ -100,6 +100,54 @@
 		]
 	},
 
+	"training" : [
+		{
+			"name": "ASP.NET MVC 5 Essential Training",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
+			"name": "Learning Full-Stack JavaScript Development: MongoDB, Node, and React",
+			"institution": "LinkedIn Learning",
+			"date": "January 2020"
+		},
+		{
+			"name": "React: Creating and Hosting a Full-Stack Site",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning React.js",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning Vue.js",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning REST APIs",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Designing RESTful APIs",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Amazon Web Services for Architects Essential Training (2017)",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning Amazon Web Services (AWS) for Developers",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		}
+	],
+
 	"activities": [
 		{ "item": "Designing and developing computer games" },
 		{
