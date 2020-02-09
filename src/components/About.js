@@ -16,9 +16,9 @@ const About = () => {
 				<ThirdPartyCredits
 					thirdPartyCredits={resume.thirdPartyTechnologies} />
 				<p>
-					The source code is available at <ThirdPartyLink
+					The source code is available on <ThirdPartyLink
 						url={resume.github}
-						text="hosted on Github" />.
+						text="Github" />.
 				</p>
 			</Card.Body>
 		</Card>
