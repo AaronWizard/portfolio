@@ -28,18 +28,16 @@ const Education = () => {
 						</Col>
 					</Row>
 				</Card.Subtitle>
-				<Card.Text>
-					<Row>
-						<Col>
-							<strong>Courses</strong>
-						</Col>
-					</Row>
-					<ul>
-						{resume.education.courses.map((course, index) =>
-							<li key={index}>{course}</li>
-						)}
-					</ul>
-				</Card.Text>
+				<Row>
+					<Col>
+						<strong>Courses</strong>
+					</Col>
+				</Row>
+				<ul>
+					{resume.education.courses.map((course, index) =>
+						<li key={index}>{course}</li>
+					)}
+				</ul>
 			</Card.Body>
 		</Card>
 	);
