@@ -11,6 +11,8 @@ import Education from './Education';
 import Activities from './Activities';
 import PageNotFound from './PageNotFound';
 
+import Footer from './Footer';
+
 const App = () => {
 	return (
 		<Router>
@@ -26,6 +28,7 @@ const App = () => {
 						component={Activities} />
 					<Route component={PageNotFound} />
 				</Switch>
+				<Footer />
 			</Container>
 		</Router>
 	);
