@@ -1,8 +1,15 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
 
 const PageNotFound = () => {
 	return (
-		<h2>Page Not Found</h2>
+		<Card>
+			<Card.Body>
+				<Card.Title>
+					Page Not Found
+				</Card.Title>
+			</Card.Body>
+		</Card>
 	);
 };
 
