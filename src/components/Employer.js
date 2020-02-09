@@ -4,6 +4,10 @@ import { Row, Col, Accordion, Card } from 'react-bootstrap';
 
 import Gallery from './Gallery';
 
+const headerStyle = {
+	cursor: 'pointer'
+};
+
 const showImages = (images) => {
 	if (images) {
 		return (
@@ -18,7 +22,8 @@ const showImages = (images) => {
 const Employer = ({ employer, index }) => {
 	return (
 		<Card>
-			<Accordion.Toggle as={Card.Header} eventKey={index}>
+			<Accordion.Toggle as={Card.Header} eventKey={index}
+				style={headerStyle}>
 				<Row>
 					<Col>
 						<strong>{employer.company}</strong>

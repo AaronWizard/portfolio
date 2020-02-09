@@ -9,7 +9,7 @@ const EmploymentHistory = () => {
 	return (
 		<Card>
 			<Card.Body>
-				<Accordion>
+				<Accordion defaultActiveKey={0}>
 					{resume.employers.map((employer, index) =>
 						<Employer key={index} employer={employer}
 							index={index} />
