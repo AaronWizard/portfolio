@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const dist = './dist';
@@ -25,7 +26,10 @@ module.exports = {
 		new HtmlWebPackPlugin({
 			template: './public/index.html',
 			filename: './index.html'
-		})
+		}),
+		new CopyPlugin([
+			{ from: 'images', to: 'images' }
+		])
 	],
 	devServer: {
 		historyApiFallback: true,

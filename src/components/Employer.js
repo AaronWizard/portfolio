@@ -2,6 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col, Accordion, Card } from 'react-bootstrap';
 
+import Gallery from './Gallery';
+
+const showImages = (images) => {
+	if (images) {
+		return (
+			<Gallery images={images} />
+		);
+	}
+	else {
+		return null;
+	}
+};
+
 const Employer = ({ employer, index }) => {
 	return (
 		<Card>
@@ -12,20 +25,21 @@ const Employer = ({ employer, index }) => {
 					</Col>
 					<Col>{employer.jobTitle}</Col>
 				</Row>
+				<Row>
+					<Col>{employer.location}</Col>
+					<Col>
+						{employer.fromDate} - {employer.toDate}
+					</Col>
+				</Row>
 			</Accordion.Toggle>
 			<Accordion.Collapse eventKey={index}>
 				<Card.Body>
-					<Row>
-						<Col>{employer.location}</Col>
-						<Col>
-							{employer.fromDate} - {employer.toDate}
-						</Col>
-					</Row>
 					<ul>
 						{employer.achievements.map((achievement, aindex) =>
 							<li key={aindex}>{achievement}</li>
 						)}
 					</ul>
+					{showImages(employer.images)}
 				</Card.Body>
 			</Accordion.Collapse>
 		</Card>

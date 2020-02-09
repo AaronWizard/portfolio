@@ -2,6 +2,7 @@ import React from 'react';
 import { Card } from 'react-bootstrap';
 
 import Activity from './Activity';
+import Gallery from './Gallery';
 
 import resume from '../resume';
 
@@ -14,6 +15,7 @@ const Activities = () => {
 						<Activity key={index} activity={activity} />
 					)}
 				</ul>
+				<Gallery images={resume.activityImages} />
 			</Card.Body>
 		</Card>
 	);
