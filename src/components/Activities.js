@@ -4,21 +4,40 @@ import { Card } from 'react-bootstrap';
 import Activity from './Activity';
 import Gallery from './Gallery';
 
-import resume from '../resume';
+import * as resume from '../resume';
 
-const Activities = () => {
-	return (
-		<Card>
-			<Card.Body>
-				<ul>
-					{resume.activities.map((activity, index) =>
-						<Activity key={index} activity={activity} />
-					)}
-				</ul>
-				<Gallery images={resume.activityImages} />
-			</Card.Body>
-		</Card>
-	);
-};
+class Activities extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			activities: [],
+			images: []
+		};
+	}
+
+	componentDidMount() {
+		resume.loadResume().then(r => {
+			this.setState({
+				activities: r.activities,
+				images: r.activityImages
+			});
+		});
+	}
+
+	render () {
+		return (
+			<Card>
+				<Card.Body>
+					<ul>
+						{this.state.activities.map((activity, index) =>
+							<Activity key={index} activity={activity} />
+						)}
+					</ul>
+					<Gallery images={this.state.images} />
+				</Card.Body>
+			</Card>
+		);
+	}
+}
 
 export default Activities;
