@@ -4,18 +4,45 @@ import { Card } from 'react-bootstrap';
 import University from './University';
 import Training from './Training';
 
-import resume from '../resume';
+import * as resume from '../resume';
 
-const Education = () => {
-	return (
-		<Card>
-			<Card.Body>
-				<University education={resume.education} />
-				<hr />
-				<Training courses={resume.training} />
-			</Card.Body>
-		</Card>
-	);
-};
+class Education extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			education: null,
+			training: []
+		};
+	}
+
+	componentDidMount() {
+		resume.loadResume().then(r => {
+			this.setState({
+				education: r.education,
+				training: r.training
+			});
+		});
+	}
+
+	education() {
+		let result = null;
+		if (this.state.education) {
+			result = <University education={this.state.education} />;
+		}
+		return result;
+	}
+
+	render() {
+		return (
+			<Card>
+				<Card.Body>
+					{this.education()}
+					<hr />
+					<Training courses={this.state.training} />
+				</Card.Body>
+			</Card>
+		);
+	}
+}
 
 export default Education;

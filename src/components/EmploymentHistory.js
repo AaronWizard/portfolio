@@ -3,21 +3,38 @@ import { Card, Accordion } from 'react-bootstrap';
 
 import Employer from './Employer';
 
-import resume from '../resume';
+import * as resume from '../resume';
 
-const EmploymentHistory = () => {
-	return (
-		<Card>
-			<Card.Body>
-				<Accordion defaultActiveKey={0}>
-					{resume.employers.map((employer, index) =>
-						<Employer key={index} employer={employer}
-							index={index} />
-					)}
-				</Accordion>
-			</Card.Body>
-		</Card>
-	);
-};
+class EmploymentHistory extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			employers: []
+		};
+	}
+
+	componentDidMount() {
+		resume.loadResume().then(r => {
+			this.setState({
+				employers: r.employers
+			});
+		});
+	}
+
+	render() {
+		return (
+			<Card>
+				<Card.Body>
+					<Accordion defaultActiveKey={0}>
+						{this.state.employers.map((employer, index) =>
+							<Employer key={index} employer={employer}
+								index={index} />
+						)}
+					</Accordion>
+				</Card.Body>
+			</Card>
+		);
+	}
+}
 
 export default EmploymentHistory;
