@@ -100,7 +100,12 @@
 		]
 	},
 
-	"training" : [
+	"training" : [,
+		{
+			"name": "Angular Essential Training",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
 		{
 			"name": "ASP.NET MVC 5 Essential Training",
 			"institution": "LinkedIn Learning",
