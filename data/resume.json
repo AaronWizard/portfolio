@@ -102,6 +102,11 @@
 
 	"training" : [
 		{
+			"name": "Android Development Essential Training: App Architecture with Kotlin",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
 			"name": "Android Development Essential Training: Your First App with Kotlin",
 			"institution": "LinkedIn Learning",
 			"date": "February 2020"
