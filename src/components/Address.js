@@ -10,11 +10,7 @@ const Address = ({ contactInfo }) => {
 			{contactInfo.city},&nbsp;
 			{contactInfo.province},&nbsp;
 			{contactInfo.postalCode}<br />
-			Home Phone: <a
-				href={`tel:${contactInfo.homePhone}`}>
-				{contactInfo.homePhone}
-			</a><br />
-			Mobile Phone: <a
+			<a
 				href={`tel:${contactInfo.mobilePhone}`}>
 				{contactInfo.mobilePhone}
 			</a><br />
