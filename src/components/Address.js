@@ -5,15 +5,6 @@ import ThirdPartyLink from './ThirdPartyLink';
 const Address = ({ contactInfo }) => {
 	return (
 		<address>
-			{contactInfo.street1},&nbsp;
-			{contactInfo.street2}<br />
-			{contactInfo.city},&nbsp;
-			{contactInfo.province},&nbsp;
-			{contactInfo.postalCode}<br />
-			<a
-				href={`tel:${contactInfo.mobilePhone}`}>
-				{contactInfo.mobilePhone}
-			</a><br />
 			<a href={`mailto:${contactInfo.email}`}>
 				{contactInfo.email}
 			</a><br />
