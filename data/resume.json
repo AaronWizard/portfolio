@@ -1,0 +1,221 @@
+{
+	"profile": "Focused, methodical, and detail-oriented developer with experience in a wide variety of technologies. Special accomplishments in front end UI development for both desktop applications and for the web.",
+
+	"contactInfo":
+	{
+		"email": "aaronjmacd86@gmail.com",
+		"linkedInURL": "https://www.linkedin.com/in/aaron-j-macdonald/"
+	},
+
+	"employers": [
+		{
+			"company": "Medusa Medical Technologies",
+			"location": "Halifax, N.S.",
+			"jobTitle": "Software Developer",
+			"fromDate": "July 2012",
+			"toDate": "February 2020",
+			"achievements": [
+				"Played a key role in the company’s modernization of their core product through the development of a WinForms based UI using C# and .NET. Earned the title \"UI guy\" in my team.",
+				"Learned WPF to design and implement a major and graphically intense product feature that is regularly celebrated by our clients.",
+				"Involved in the port of a classic ASP web application to ASP.NET MVC; using JavaScript, jQuery, and Bootstrap.",
+				"Regularly developed and maintained queries and stored procedures for Microsoft SQL Server databases."
+			],
+			"images": [
+				"Panasonic_FZ_Mani-450x320.png",
+				"config_app.png"
+			]
+		},
+		{
+			"company": "Spatial View Inc.",
+			"location": "Halifax, N.S.",
+			"jobTitle": "Programmer",
+			"fromDate": "December 2010",
+			"toDate": "May 2012",
+			"achievements": [
+				"Developed and maintained web-based e-commerce platforms using PHP, JavaScript, CSS, and MySQL.",
+				"Ensured the usability and consistency of our applications across platforms by implementing front-end web interfaces for both desktop and mobile browsers.",
+				"Collaborated with the rest of the team in development and integration of software features and enhancements through the use of Mercurial."
+			],
+			"images": [
+				"vm3d_front.png",
+				"vm3d_catalog.png"
+			]
+		},
+		{
+			"company": "GenieKnows.com",
+			"location": "Halifax, N.S.",
+			"jobTitle": "Software Developer",
+			"fromDate": "March 2009",
+			"toDate": "January 2010",
+			"achievements": [
+				"Sped up testing and reduced the amount of manual testing of web interfaces through the use of automation scripts implemented in Ruby.",
+				"Took part in the construction of an extensive web application using Python and Django, demonstrating initiative by independently implementing many of the core data structures and much of the major business logic.",
+				"Coordinated with other team members to design and implement a complex web interface, allocating tasks for each to work on and assisting each other when faced with difficulties with a task."
+			]
+		},
+		{
+			"company": "Electronic Arts Canada",
+			"location": "Burnaby, B.C.",
+			"jobTitle": "Software Engineer",
+			"fromDate": "September 2007",
+			"toDate": "December 2007",
+			"achievements": [
+				"Participated in a Scrum development process to keep up to date with the current needs of the department, learning agile development methods and demonstrating initiative by taking on Scrum tasks.",
+				"Implemented a web service using C#, ASP.NET, and SQL to as part of an initiative to integrate the different tools used by my department."
+			]
+		},
+		{
+			"company": "GenieKnows.com",
+			"location": "Halifax, N.S.",
+			"jobTitle": "Research and Development Support",
+			"fromDate": "January 2007",
+			"toDate": "May 2007",
+			"achievements": [
+				"Responsible for the complete design, implementation, and testing of a software module for use by the company's products; developed using C++.",
+				"Documented the software module; describing its architecture, major algorithms, interface, and performance; to help the rest of the department maintain and expand on the module."
+			]
+		}
+	],
+
+	"education": {
+		"school": "Dalhousie University",
+		"location": "Halifax, N.S.",
+		"degree": "Bachelor of Computer Science with Co-operative Education",
+		"fromDate": "September 2004",
+		"toDate": "October 2008",
+		"courses": [
+			"Computer graphics and animation",
+			"Human-computer interaction",
+			"Object oriented programming and design",
+			"Database management systems",
+			"Web applications"
+		]
+	},
+
+	"training" : [
+		{
+			"name": "Android Development Essential Training: Manage Data with Kotlin",
+			"institution": "LinkedIn Learning",
+			"date": "March 2020"
+		},
+		{
+			"name": "Android Development Essential Training: The User Interface with Kotlin",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
+			"name": "Android Development Essential Training: App Architecture with Kotlin",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
+			"name": "Android Development Essential Training: Your First App with Kotlin",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
+			"name": "Angular Essential Training",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
+			"name": "ASP.NET MVC 5 Essential Training",
+			"institution": "LinkedIn Learning",
+			"date": "February 2020"
+		},
+		{
+			"name": "Learning Full-Stack JavaScript Development: MongoDB, Node, and React",
+			"institution": "LinkedIn Learning",
+			"date": "January 2020"
+		},
+		{
+			"name": "React: Creating and Hosting a Full-Stack Site",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning React.js",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning Vue.js",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning REST APIs",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Designing RESTful APIs",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Amazon Web Services for Architects Essential Training (2017)",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		},
+		{
+			"name": "Learning Amazon Web Services (AWS) for Developers",
+			"institution": "LinkedIn Learning",
+			"date": "November 2019"
+		}
+	],
+
+	"activities": [
+		{ "item": "Designing and developing computer games" },
+		{
+			"item": "Creating artwork and taking extended studies courses to improve artistic skills"
+		},
+		{
+			"item": "Web development using modern web technologies",
+			"links": [
+				"https://aaronwizard.github.io/portfolio/",
+				"https://aaronwizard.github.io/webtoys/"
+			]
+		},
+		{ "item": "Practising the guitar" }
+	],
+
+	"activityImages": [
+		"spaceship.png",
+		"game.png",
+		"island.png",
+		"wizardstar.png",
+		"warp_run_screen_2.png",
+		"falling_blocks.png",
+		"shape_fight.png"
+	],
+
+	"thirdPartyTechnologies": [
+		{
+			"name": "React",
+			"url": "https://reactjs.org/"
+		},
+		{
+			"name": "React Router",
+			"url": "https://reacttraining.com/react-router/"
+		},
+		{
+			"name": "Bootstrap",
+			"url": "https://getbootstrap.com/"
+		},
+		{
+			"name": "React Bootstrap",
+			"url": "https://react-bootstrap.github.io/"
+		},
+		{
+			"name": "Babel",
+			"url": "https://babeljs.io/"
+		},
+		{
+			"name": "Webpack",
+			"url": "https://webpack.js.org/"
+		}
+	],
+
+	"github": "https://github.com/AaronWizard/portfolio"
+}
