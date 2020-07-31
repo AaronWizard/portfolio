@@ -25,10 +25,10 @@ class EmploymentHistory extends React.Component {
 		return (
 			<Card>
 				<Card.Body>
-					<Accordion defaultActiveKey={0}>
+					<Accordion defaultActiveKey={1}>
 						{this.state.employers.map((employer, index) =>
-							<Employer key={index} employer={employer}
-								index={index} />
+							<Employer key={index + 1} employer={employer}
+								index={index + 1} />
 						)}
 					</Accordion>
 				</Card.Body>
