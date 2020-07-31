@@ -94,6 +94,26 @@
 
 	"training" : [
 		{
+			"name": "Building Web APIs with ASP.NET Web API 2.2",
+			"institution": "Lynda.com",
+			"date": "July 2020"
+		},
+		{
+			"name": "ASP.NET Web Forms Essential Training",
+			"institution": "Lynda.com",
+			"date": "June 2020"
+		},
+		{
+			"name": "PHP: Object-Oriented Programming",
+			"institution": "Lynda.com",
+			"date": "April 2020"
+		},
+		{
+			"name": "PHP Essential Training",
+			"institution": "Lynda.com",
+			"date": "April 2020"
+		},
+		{
 			"name": "Android Development Essential Training: Manage Data with Kotlin",
 			"institution": "LinkedIn Learning",
 			"date": "March 2020"
