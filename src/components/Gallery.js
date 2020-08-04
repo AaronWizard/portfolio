@@ -1,17 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Carousel } from 'react-bootstrap';
-
-const carouselStyle = {
-	background: 'lightgrey',
-	padding: '1em',
-	borderRadius: '4px'
-};
+import { Card, Carousel } from 'react-bootstrap';
 
 const imageStyle = {
 	height: '400px',
 	display: 'block',
-	margin: 'auto'
+	margin: 'auto',
+	borderRadius: '0.5rem'
 };
 
 const imagePath = (imageName) => {
@@ -20,16 +15,23 @@ const imagePath = (imageName) => {
 
 const Gallery = ({ images }) => {
 	return (
-		<Carousel style={carouselStyle}>
-			{images.map((imageName, index) =>
-				<Carousel.Item key={index}>
-					<a href={imagePath(imageName)} target="_blank"
-						rel="noreferrer noopener">
-						<img style={imageStyle} src={imagePath(imageName)} />
-					</a>
-				</Carousel.Item>
-			)}
-		</Carousel>
+		<Card bg="dark">
+			<Card.Body>
+				<Carousel>
+					{images.map((imageName, index) =>
+						<Carousel.Item key={index}>
+							<a href={imagePath(imageName)} target="_blank"
+								rel="noreferrer noopener">
+								<img
+									style={imageStyle}
+									src={imagePath(imageName)}
+								/>
+							</a>
+						</Carousel.Item>
+					)}
+				</Carousel>
+			</Card.Body>
+		</Card>
 	);
 };
 
