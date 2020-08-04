@@ -15,10 +15,12 @@
 			"fromDate": "July 2012",
 			"toDate": "February 2020",
 			"achievements": [
-				"Played a key role in the company’s modernization of their core product through the development of a WinForms based UI using C# and .NET. Earned the title \"UI guy\" in my team.",
+				"Played a key role in the company's modernization of their core product through the development of a WinForms based UI using C# and .NET. Earned the title \"UI guy\" in my team.",
+				"Regularly developed and maintained queries and stored procedures for Microsoft SQL Server databases to drive highly customizable data-driven applications.",
 				"Learned WPF to design and implement a major and graphically intense product feature that is regularly celebrated by our clients.",
+				"Developed an ASP.NET SOAP web service, designing XML schemas and SQL queries for the API to expose our data to third party applications.",
 				"Involved in the port of a classic ASP web application to ASP.NET MVC; using JavaScript, jQuery, and Bootstrap.",
-				"Regularly developed and maintained queries and stored procedures for Microsoft SQL Server databases."
+				"Demonstrated the ability to work across departments, from business analysts to QA team members, to ensure clear requirements for my work and that my output meets company and stakeholder expectations."
 			],
 			"images": [
 				"Panasonic_FZ_Mani-450x320.png",
@@ -49,8 +51,8 @@
 			"toDate": "January 2010",
 			"achievements": [
 				"Sped up testing and reduced the amount of manual testing of web interfaces through the use of automation scripts implemented in Ruby.",
-				"Took part in the construction of an extensive web application using Python and Django, demonstrating initiative by independently implementing many of the core data structures and much of the major business logic.",
-				"Coordinated with other team members to design and implement a complex web interface, allocating tasks for each to work on and assisting each other when faced with difficulties with a task."
+				"Took part in the construction of an extensive web application using Python and Django, demonstrating initiative by independently implementing core data structures and major business logic components.",
+				"Coordinated with other team members to design and implement a complex web interface using HTML and CSS, allocating tasks between team members and providing assistance to others when necessary."
 			]
 		},
 		{
@@ -61,7 +63,7 @@
 			"toDate": "December 2007",
 			"achievements": [
 				"Participated in a Scrum development process to keep up to date with the current needs of the department, learning agile development methods and demonstrating initiative by taking on Scrum tasks.",
-				"Implemented a web service using C#, ASP.NET, and SQL to as part of an initiative to integrate the different tools used by my department."
+				"Implemented a web service using C#, ASP.NET, and SQL as part of an initiative to integrate tools and data across company departments."
 			]
 		},
 		{
@@ -72,7 +74,8 @@
 			"toDate": "May 2007",
 			"achievements": [
 				"Responsible for the complete design, implementation, and testing of a software module for use by the company's products; developed using C++.",
-				"Documented the software module; describing its architecture, major algorithms, interface, and performance; to help the rest of the department maintain and expand on the module."
+				"Documented the software module; describing its architecture, major algorithms, interface, and performance; to help the rest of the company maintain and expand on the module.",
+				"Parts of this software module was still in use when I returned to the company after graduating university."
 			]
 		}
 	],
