@@ -97,6 +97,11 @@
 
 	"training" : [
 		{
+			"name": "Learning Redux",
+			"institution": "Lynda.com",
+			"date": "August 2020"
+		},
+		{
 			"name": "Building Web APIs with ASP.NET Web API 2.2",
 			"institution": "Lynda.com",
 			"date": "July 2020"
