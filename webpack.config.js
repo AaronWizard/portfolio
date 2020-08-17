@@ -27,10 +27,12 @@ module.exports = {
 			template: './public/index.html',
 			filename: './index.html'
 		}),
-		new CopyPlugin([
-			{ from: 'images', to: 'images' },
-			{ from: 'data', to: 'data' }
-		])
+		new CopyPlugin({
+			patterns: [
+				{ from: 'images', to: 'images' },
+				{ from: 'data', to: 'data' }
+			]
+		})
 	],
 	devServer: {
 		historyApiFallback: true,
