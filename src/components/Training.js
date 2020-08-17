@@ -1,19 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'react-bootstrap';
+import { Card, Table } from 'react-bootstrap';
 
 const Training = ( { courses } ) => {
 	return (
 		<div>
 			<Card.Title>Professional Development</Card.Title>
-			<ul>
-				{courses.map((course, index) =>
-					<li key={index}>
-						<em>{course.name}</em>;&nbsp;
-						{course.institution}, {course.date}
-					</li>
-				)}
-			</ul>
+			<Table responsive="sm" bordered={true} striped={true}>
+				<thead>
+					<tr>
+						<th>Course Name</th>
+						<th>Institution</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					{courses.map((course, index) =>
+						<tr key={index}>
+							<td>{course.name}</td>
+							<td>{course.institution}</td>
+							<td>{course.date}</td>
+						</tr>
+					)}
+				</tbody>
+			</Table>
 		</div>
 	);
 };
