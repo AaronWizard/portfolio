@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card } from 'react-bootstrap';
 
 const Training = ( { courses } ) => {
 	return (
 		<div>
-			<h2>Professional Development</h2>
+			<Card.Title>Professional Development</Card.Title>
 			<ul>
 				{courses.map((course, index) =>
 					<li key={index}>

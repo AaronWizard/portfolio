@@ -1,16 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Card } from 'react-bootstrap';
 
 const University = ({ education }) => {
 	return (
 		<div>
-			<h2>{education.school}</h2>
-			<h3>{education.degree}</h3>
+			<Card.Title>Education</Card.Title>
+			<p>
+				<Card.Subtitle>
+					{education.school}<br />{education.degree}
+				</Card.Subtitle>
+			</p>
 			<p>
 				{education.location}<br />
 				{education.fromDate} - {education.toDate}
 			</p>
-			<h2>Courses</h2>
+			<Card.Subtitle>Courses</Card.Subtitle>
 			<ul>
 				{education.courses.map((course, index) =>
 					<li key={index}>{course}</li>

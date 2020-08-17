@@ -28,6 +28,7 @@ class Activities extends React.Component {
 		return (
 			<Card>
 				<Card.Body>
+					<Card.Title>Activities</Card.Title>
 					<ul>
 						{this.state.activities.map((activity, index) =>
 							<Activity key={index} activity={activity} />

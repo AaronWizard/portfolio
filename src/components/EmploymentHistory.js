@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Accordion } from 'react-bootstrap';
+import { Accordion, Card } from 'react-bootstrap';
 
 import Employer from './Employer';
 
@@ -25,6 +25,7 @@ class EmploymentHistory extends React.Component {
 		return (
 			<Card>
 				<Card.Body>
+					<Card.Title>Employment History</Card.Title>
 					<Accordion defaultActiveKey={1}>
 						{this.state.employers.map((employer, index) =>
 							<Employer key={index + 1} employer={employer}

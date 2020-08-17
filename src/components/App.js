@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
-import { Container } from 'react-bootstrap';
+import { Container, Card } from 'react-bootstrap';
 
 import NavBar from './NavBar';
 import Footer from './Footer';
@@ -24,18 +24,22 @@ const App = () => {
 				<div style={style}>
 					<h1>Aaron MacDonald&#39;s Resume and Portfolio</h1>
 					<NavBar />
-					<Suspense fallback={<div>Loading...</div>}>
-						<Switch>
-							<Route exact path="/" component={About} />
-							<Route exact path="/employment"
-								component={EmploymentHistory} />
-							<Route exact path="/education"
-								component={Education} />
-							<Route exact path="/activities"
-								component={Activities} />
-							<Route component={PageNotFound} />
-						</Switch>
-					</Suspense>
+					<Card>
+						<Card.Body>
+							<Suspense fallback={<div>Loading...</div>}>
+								<Switch>
+									<Route exact path="/" component={About} />
+									<Route exact path="/employment"
+										component={EmploymentHistory} />
+									<Route exact path="/education"
+										component={Education} />
+									<Route exact path="/activities"
+										component={Activities} />
+									<Route component={PageNotFound} />
+								</Switch>
+							</Suspense>
+						</Card.Body>
+					</Card>
 				</div>
 				<Footer />
 			</Container>

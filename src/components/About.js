@@ -41,6 +41,7 @@ class About extends React.Component {
 		return (
 			<Card>
 				<Card.Body>
+					<Card.Title>About</Card.Title>
 					<p className="lead">{this.state.profileText}</p>
 					{this.contactInfo()}
 					<ThirdPartyCredits
